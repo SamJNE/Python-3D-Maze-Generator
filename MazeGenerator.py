@@ -22,41 +22,9 @@ for x in range(floors):
         for n in range(startC, endC + 1):
             arr[x][m][n] = 0
             unvisited.append((x, m, n))
-
-#array[floor][row][column]
-
-##unvisited.remove((3,8,8))
-##unvisited.remove((3,8,9))
-##unvisited.remove((3,8,10))
-##unvisited.remove((3,8,11))
-##unvisited.remove((3,9,8))
-##unvisited.remove((3,9,9))
-##unvisited.remove((3,9,10))
-##unvisited.remove((3,9,11))
-##unvisited.remove((3,10,8))
-##unvisited.remove((3,10,9))
-##unvisited.remove((3,10,10))
-##unvisited.remove((3,10,11))
-##unvisited.remove((3,11,8))
-##unvisited.remove((3,11,9))
-##unvisited.remove((3,11,10))
-##unvisited.remove((3,11,11))
-##unvisited.remove((4,8,8))
-##unvisited.remove((4,8,9))
-##unvisited.remove((4,8,10))
-##unvisited.remove((4,8,11))
-##unvisited.remove((4,9,8))
-##unvisited.remove((4,9,9))
-##unvisited.remove((4,9,10))
-##unvisited.remove((4,9,11))
-##unvisited.remove((4,10,8))
-##unvisited.remove((4,10,9))
-##unvisited.remove((4,10,10))
-##unvisited.remove((4,10,11))
-##unvisited.remove((4,11,8))
-##unvisited.remove((4,11,9))
-##unvisited.remove((4,11,10))
-##unvisited.remove((4,11,11))
+            
+##To exclude a point from the maze, list it with the below format:
+##unvisited.remove(([floor],[row],[column]))
 
 current = random.choice(unvisited)
 unvisited.remove(current)
